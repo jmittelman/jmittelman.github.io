@@ -11,7 +11,15 @@
 <body>
 <header>
     <h1>Jordan Mittelman</h1>
-       
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact</a>
+          </div>
+          <span onclick="openNav()">open</span>
+    </div>
 </header>
  
 <main>
@@ -23,9 +31,24 @@
             </div>
     </div>
 
+    
+    <img class="portrait" src="portrait.png" alt="portrait">
+            
+
 
 </main>
 
+<h1>dsfdas</h1>
+
+<script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
 
 
 </body>
