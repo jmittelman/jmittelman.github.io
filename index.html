@@ -10,6 +10,16 @@
       href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
@@ -17,34 +27,116 @@
 
       <nav>
         <ul id="menu">
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Projects</li></a>
-          <a href="#"><li>Contact</li></a>
+          <!-- <a href="#section1"><li>About</li></a> -->
+          <a href="#section2"><li>Projects</li></a>
+          <a href="#section3"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
-
-    <main>
-      <div class="container">
-        <div class="text-block">
-          <h2>Are you on the Right Path?</h2>
-          <h3>Arrive at the smartest way to achieve your marketing goals.</h3>
+    <section>
+      <main>
+        <div class="heroContainer">
+          <div class="text-block">
+            <h2>Software Engineer.</h2>
+            <h2>Digital Strategist.</h2>
+            <h2>Brand Builder.</h2>
+          </div>
+          <div class="resumeclip">
+            <img src="./resumeclip.jpg" alt="resume" />
+          </div>
+          <a href="./JM_Resume.pdf" class="viewButton2">View Resume</a>
         </div>
-      </div>
+      </main>
 
-      <section class="about">
-        <img class="portrait" src="Design.png" alt="portrait" />
-        <p>
-          <strong
-            >Champions of the great outdoors and important social causes are
-            searching for ways to spark engagement and build affinity.</strong
-          >
-          <br />&nbsp;<br />
-          They need a guide to help tell their stories and inspire advocacy. I
-          bridge the creative gap and implement strategies that deliver wild
-          results enabling brands to navigate a journey to radical achievement.
-        </p>
+      <section class="projects" id="section2">
+        <h3>Projects</h3>
+
+        <div class="projectContainer">
+          <img
+            src="./trivia_round_up.jpg"
+            alt="Trivia Round-Up"
+            class="triviaImg"
+          />
+          <div>
+            <h4>Trivia Round-Up</h4>
+            <p>
+              A rodeo themed trivia game that will test your knowledge of sports
+              like bull riding, barrel racing, calf roping, steer wrestling, and
+              bareback riding. Saddle up!
+            </p>
+            <a
+              href="https://triplespice.github.io/Trivia-Round-Up/"
+              class="viewButton"
+              >View</a
+            >
+            <a
+              href="https://github.com/triplespice/Trivia-Round-Up"
+              class="fab fa-github"
+            >
+            </a>
+          </div>
+        </div>
+
+        <div class="projectContainer">
+          <img
+            src="./spellingbee.jpg"
+            alt="Spelling Bee API"
+            class="triviaImg"
+          />
+          <div>
+            <h4>Spelling Bee API</h4>
+            <p>
+              An API built to interact with results data of the Scripps National
+              Spelling Bee for the years 2000-2019.
+            </p>
+            <a
+              href="https://spelling-bee-api.herokuapp.com/api/bees"
+              class="viewButton"
+              >View</a
+            >
+            <a
+              href="https://github.com/triplespice/spelling-bee-api"
+              class="fab fa-github"
+            >
+            </a>
+          </div>
+        </div>
       </section>
-    </main>
+
+      <section class="contact" id="section3">
+        <h3 class="contactHeader">Contact Form</h3>
+
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <footer></footer>
+    </section>
   </body>
 </html>
