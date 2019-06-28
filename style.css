@@ -1,11 +1,12 @@
 body {
   width: 1200px;
   margin: 0 auto;
+  overscroll-behavior: none;
 }
 
 header {
   height: 90px;
-  margin: 20px 0 0 0;
+  /* margin: 20px 0 0 0; */
   display: flex;
   justify-content: space-between;
   align-items: baseline;
