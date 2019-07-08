@@ -29,7 +29,7 @@ nav {
   padding: 20px;
 }
 
-ul {
+#menu {
   width: 300px;
   display: flex;
   justify-content: center;
@@ -118,9 +118,37 @@ main {
   background-color: #abb9c6;
 }
 
+.headshot {
+  display: block;
+  padding-right: 150px;
+}
+
 .aboutTop {
   display: flex;
   justify-content: space-between;
+}
+
+.listItem {
+  display: inline-block;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  margin: 0 3px 0 3px;
+  background-color: rgba(153, 205, 255, 0.4);
+}
+/* .aboutBottom {
+  display: flex;
+  align-content: space-between;
+} */
+
+.hardSkillsList {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.softSkillsList {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .projects {
