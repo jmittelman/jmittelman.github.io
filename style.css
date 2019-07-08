@@ -118,6 +118,11 @@ main {
   background-color: #abb9c6;
 }
 
+.aboutTop {
+  display: flex;
+  justify-content: space-between;
+}
+
 .projects {
   background-color: #5a86b3;
   padding: 30px 90px 50px 90px;
