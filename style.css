@@ -16,6 +16,22 @@ header {
   z-index: 500;
 }
 
+.anchor {
+  display: block;
+  height: 63px; /* this is the height of your header */
+  margin-top: -63px; /* this is again negative value of the height of your header */
+  visibility: hidden;
+}
+
+/* section::before {
+  display: block;
+  content: " ";
+  margin-top: -285px;
+  height: 285px;
+  visibility: hidden;
+  pointer-events: none;
+} */
+
 h1 {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -126,6 +142,7 @@ main {
 .aboutTop {
   display: flex;
   justify-content: space-between;
+  margin-top: 30px;
 }
 
 .listItem {
