@@ -96,10 +96,11 @@ li {
 
 .resumeclip {
   width: 300px;
+  height: auto;
   transform: rotate(10deg);
   position: absolute;
   right: 275px;
-  top: 50px;
+  top: 100px;
 }
 
 h2 {
