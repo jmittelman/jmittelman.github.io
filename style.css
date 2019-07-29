@@ -45,6 +45,22 @@ nav {
   padding: 20px;
 }
 
+.navbutton {
+  line-height: 1.5em;
+  font-size: 25px;
+}
+
+/* .navbutton:hover {
+  /* border: 1.5px solid black;
+  border-radius: 4px; */
+/* font-size: 130%;
+  line-height: 1.15385em;
+  text-align: center; */
+/* padding: 5px; */
+/* margin-left: 5px;
+  margin-right: 5px; */
+/* } */
+
 #menu {
   width: 300px;
   display: flex;
@@ -101,6 +117,11 @@ li {
   position: absolute;
   right: 275px;
   top: 100px;
+  transition: transform 0.5s ease-in;
+}
+
+.resumeclip:hover {
+  transform: scale(1.1);
 }
 
 h2 {
@@ -148,7 +169,8 @@ main {
 
 .listItem {
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid rgba(211, 211, 211, 0.3);
+  border-radius: 4px;
   text-align: center;
   padding: 5px;
   margin: 0 3px 0 3px;
@@ -183,18 +205,18 @@ main {
 .triviaImg {
   max-width: 400px;
   background-color: rgba(186, 73, 84, 1);
+  transition: transform 0.5s ease-in;
 }
 
-.viewButton {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: rgba(206, 167, 176, 1);
-  width: 200px;
+.triviaImg:hover {
+  transform: scale(1.05);
+}
+
+.linkscontainer {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: flex-end;
 }
 
 .viewButton2 {
@@ -203,7 +225,7 @@ main {
   text-align: center;
   padding: 10px;
   font-size: 20px;
-  border: 1px solid black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: rgba(206, 167, 176, 1);
   width: 200px;
@@ -212,9 +234,32 @@ main {
   top: 240px;
 }
 
+.viewButton2:hover {
+  opacity: 0.7;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.viewButton {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: rgba(206, 167, 176, 1);
+  width: 64.13px;
+  margin-right: 15px;
+}
+
+.viewButton:hover {
+  opacity: 0.7;
+  border: 1.5px solidrgba(255, 255, 255, 0.3);
+}
+
 .fa-github {
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: black;
   text-align: center;
@@ -223,6 +268,11 @@ main {
   background-image: url= "./github_PNG80.png";
   width: 64.13px;
   height: 45px;
+}
+
+.fa-github:hover {
+  opacity: 0.7;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -246,16 +296,16 @@ input[type="submit"] {
   background-color: rgba(206, 167, 176, 1);
   font-size: 20px;
   color: black;
-  border: 1px solid black;
+  border: 1px solid rgba(211, 211, 211, 0.3);
   padding: 10px;
-  border: none;
+
   border-radius: 4px;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: rgba(206, 167, 176, 1);
-  border: 1px solid black;
+  opacity: 0.7;
+  border: 1.5px solid rgba(211, 211, 211, 0.3);
 }
 
 .container {
@@ -276,7 +326,50 @@ input[type="submit"]:hover {
   padding-bottom: 40px;
 }
 
+.socials {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+.fa {
+  font-size: 2rem;
+  color: #5a86b3;
+  margin: 0.5rem;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 footer {
   padding: 40px;
   background-color: #abb9c6;
+}
+
+@media only screen and (max-width: 560px) {
+  h1 {
+    font-size: 30px;
+
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+
+    padding: 10px;
+  }
+
+  #menu {
+    flex-direction: column;
+  }
+
+  /* .nav-links {
+        min-width: 60px;
+    }
+
+    .project-icon {
+        width: 90%;
+        height: 170px;
+    } */
 }
