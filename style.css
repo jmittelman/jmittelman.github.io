@@ -271,7 +271,7 @@ input[type="submit"]:hover {
 }
 
 .contact {
-  background-color: #c4cc66;
+  background-color: rgba(206, 167, 176, 1);
   padding-bottom: 40px;
 }
 
