@@ -140,6 +140,21 @@ p {
   font-family: "Inconsolata", monospace;
 }
 
+h5 {
+  font-size: 18px;
+  width: 300px;
+  font-family: "Inconsolata", monospace;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.small {
+  font-size: 16px;
+  width: 250px;
+  font-family: "Inconsolata", monospace;
+  margin-bottom: 30px;
+}
+
 .portrait {
   width: 300px;
   height: 300px;
@@ -154,6 +169,12 @@ p {
 
 main {
   background-color: #abb9c6;
+  transition: background-color 1s ease-in;
+  transition: background-color 1s ease-out;
+}
+
+main:hover {
+  background-color: #5a86b3;
 }
 
 .headshot {
@@ -203,20 +224,55 @@ main {
 }
 
 .triviaImg {
-  max-width: 400px;
+  max-width: 300px;
   background-color: rgba(186, 73, 84, 1);
   transition: transform 0.5s ease-in;
+  margin-bottom: 0;
 }
 
-.triviaImg:hover {
+/* .triviaImg:hover {
   transform: scale(1.05);
-}
+} */
 
 .linkscontainer {
   display: flex;
   flex-direction: row;
   align-content: space-between;
   align-items: flex-end;
+}
+
+.triviaImg1 {
+  max-width: 40%;
+}
+
+.heroprojectdescription {
+  background-color: rgba(153, 205, 255, 0.9);
+  padding: 0 0 20px 20px;
+}
+
+/* .heroprojectdescription:hover {
+  background-color: rgba(153, 205, 255, 0.9);
+} */
+
+.projectgrid {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.projectdescription {
+  display: none;
+  background-color: rgba(153, 205, 255, 0.99);
+  padding: 0 0 10px 20px;
+
+  position: absolute;
+  height: 100%;
+}
+
+.projectContainer:hover .projectdescription {
+  display: block;
 }
 
 .viewButton2 {
