@@ -450,7 +450,7 @@ footer {
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 560px) {
+/* @media only screen and (max-width: 560px) {
   h1 {
     font-size: 30px;
 
@@ -475,6 +475,8 @@ footer {
 
   /* hero section */
 
+
+/*
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -499,4 +501,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
   }
-}
+
+
+
+}  
