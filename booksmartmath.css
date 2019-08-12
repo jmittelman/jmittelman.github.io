@@ -18,8 +18,8 @@ header {
 
 .anchor {
   display: block;
-  height: 63px; /* this is the height of your header */
-  margin-top: -63px; /* this is again negative value of the height of your header */
+  height: 63px;
+  margin-top: -63px;
   visibility: hidden;
 }
 
@@ -38,7 +38,7 @@ nav {
   width: 20%;
 }
 
-.navbutton {
+.nav-button {
   line-height: 1.5em;
   font-size: 25px;
 }
@@ -62,33 +62,15 @@ li {
   text-shadow: 1px 1px rgb(238, 236, 236);
 }
 
-.heroContainer {
+.hero-container {
   width: 1200px;
   height: 500px;
-  background-image: url("./geometric.jpg");
+  background-image: url("./media/geometric.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   position: relative;
-}
-
-.design-container {
-  width: 1200px;
-  height: 600px;
-  background-image: url("./reading.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 30px 90px 50px 90px;
-}
-
-.design-examples-container {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
 }
 
 .text-block {
@@ -168,7 +150,7 @@ h5 {
 
 main {
   background-color: #abb9c6;
-  background-image: url("./reading.jpg");
+  background-image: url("./media/reading.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   transition: background-color 1s ease-in;
@@ -200,7 +182,7 @@ main {
   margin-top: 50px;
 }
 
-.aboutTop {
+.about-top {
   display: flex;
   justify-content: space-between;
   margin-top: 0;
@@ -215,61 +197,28 @@ main {
   text-decoration: underline;
 }
 
-.Collateral-item {
+.collateral-item {
   display: block;
 }
 
-.emails {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 20px 0 40px;
-}
-
-.emailimage {
-  max-height: 500px;
-  /* margin-left: 100px; */
-}
-
-.flyersimage {
-  max-height: 290px;
-  padding: 30px 0 0 25px;
-}
-.projectContainer {
+.project-container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   position: r;
 }
 
-.triviaImg {
-  max-width: 300px;
-  /* background-color: rgba(186, 73, 84, 1); */
-  transition: transform 0.5s ease-in;
-  margin-bottom: 0;
-}
-
-/* .triviaImg:hover {
-  transform: scale(1.05);
-} */
-
-.linkscontainer {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  align-items: flex-end;
-}
-
-.triviaImg1 {
+.design-work-img {
   max-width: 40%;
   transition: transform 0.5s ease-in;
   margin-bottom: 30px;
 }
 
-.triviaImg1:hover {
+.design-work-img:hover {
   transform: scale(1.05);
 }
 
-.heroprojectdescription {
+.sidebar-description {
   background-color: rgba(153, 205, 255, 0.9);
   padding: 20px 20px 20px 20px;
   border-radius: 4px;
@@ -282,41 +231,9 @@ main {
 .collateral-second {
   margin-bottom: 30px;
 }
-/* .heroprojectdescription:hover {
-  background-color: rgba(153, 205, 255, 0.9);
-} */
 
 .collateral-second {
   margin-right: 80px;
-}
-
-.projectgrid {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  position: relative;
-  margin: 0 auto;
-}
-
-.projectdescription {
-  display: none;
-  background-color: rgba(153, 205, 255, 0.85);
-  padding: 0 0 0 20px;
-
-  position: absolute;
-  height: 100%;
-  width: 300px;
-}
-
-.projectContainer {
-  border-radius: 0 0 4px 4px;
-  padding-bottom: 0;
-}
-
-.projectContainer:hover .projectdescription {
-  display: block;
-  border-radius: 0 0 4px 4px;
-  border: 2px solid rgba(84, 83, 83, 0.8);
 }
 
 .role-and-results {
@@ -339,67 +256,8 @@ main {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.viewButton2 {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: rgba(206, 167, 176, 1);
-  width: 200px;
-  position: absolute;
-  right: 20px;
-  top: 240px;
-  font-family: "Inconsolata", monospace;
-}
-
-.viewButton2:hover {
-  opacity: 0.7;
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
-}
-
-.viewButton {
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: rgba(206, 167, 176, 1);
-  width: 64.13px;
-  margin-right: 15px;
-  font-family: "Inconsolata", monospace;
-}
-
-.viewButton:hover {
-  opacity: 0.7;
-  border: 1.5px solidrgba(255, 255, 255, 0.3);
-}
-
 * {
   box-sizing: border-box;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #abb9c6;
-  padding: 50px;
-  width: 600px;
-  margin: 0 auto 30px auto;
-  box-shadow: 3px 3px 5px rgb(130, 128, 128);
-}
-
-.contactHeader {
-  margin: 0 auto 40px auto;
-  padding-top: 40px;
-}
-
-.contact {
-  background-color: rgba(206, 167, 176, 1);
-  padding-bottom: 40px;
 }
 
 /* footer */
